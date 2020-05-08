@@ -92,24 +92,15 @@ function RPG() {
 				}
 			}
 
-			// alert("This is the letter: " + char);
-
-			// alert("This is alphabet count: " + j);
-
 			arrayStorage[j] = char;
 			j++;
 		}
 		// random number
 		if (numbers === 1) {
 			pwdnum = Math.floor(Math.random() * 10);
-			// alert("number is: " + pwdnum);
-
-			// alert("This is number count: " + j);
 
 			arrayStorage[j] = pwdnum;
 			j++;
-
-			// alert("This is number count after +1: " + j);
 		}
 
 		// Random Special Character
@@ -120,14 +111,8 @@ function RPG() {
 			specialChar =
 				specialCharacter[Math.floor(Math.random() * specialCharacter.length)];
 
-			// alert("Special Character: " + specialChar);
-
-			// alert("This is specialChar count: " + j);
-
 			arrayStorage[j] = specialChar;
 			j++;
-
-			//  alert("This is specialChar count +1: " + j);
 		}
 		if (j <= 1) {
 			j--;
@@ -135,9 +120,6 @@ function RPG() {
 		} else {
 			arrayDisplay[i] = arrayStorage[Math.floor(Math.random() * j)];
 		}
-
-		// alert("character at: " + i + " is " + arrayDisplay[i]);
-		// alert("End Count: " + j);
 	}
 
 	document.getElementById("Password").innerHTML =
